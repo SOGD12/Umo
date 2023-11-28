@@ -1,0 +1,18 @@
+<h1>Buscado: <small>{{termino}}</small> </h1>
+<hr>
+
+<div class="row" *ngIf="aretes.length == 0">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            No existe resultado: {{termino}}
+        </div>
+
+    </div>
+
+</div>
+
+<div class="row row-cols-1 row-cols-md-4 g-3 animated fadeIn">
+
+    <app-arete-tarjeta [arete]="arete" [index]="arete.idx" *ngFor="let arete of aretes;"></app-arete-tarjeta>
+
+</div>

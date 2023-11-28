@@ -1,0 +1,24 @@
+<p class="animated fadeIn">{{arete.nombre | uppercase}} <small>({{arete.itemn |date:'y'}})</small></p>
+<hr>
+
+<div class="row animated fadeIn fast">
+    <div class="col-md-4">
+
+
+        <img [src]="arete.img" class="img-fluid" [alt]="arete.nombre">
+        <br><br>
+        <br><a [routerLink]="['/aretes']" class="btn btn-outline-danger d-block m-4">Regresar</a>
+
+    </div>
+
+    <div class="col-md-8">
+        <br>
+        <h3>{{arete.nombre}}</h3>
+        <hr>
+        <p>
+            {{arete.bio}}
+        </p>
+
+    </div>
+
+</div>
