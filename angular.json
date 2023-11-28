@@ -82,7 +82,8 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "src/assets"
+              "src/assets",
+              "src/feather.ico"
             ],
             "styles": [
               "src/styles.css"
