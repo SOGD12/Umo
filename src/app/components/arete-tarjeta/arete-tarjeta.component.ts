@@ -25,5 +25,9 @@ export class AreteTarjetaComponent {
     // this.areteSeleccionado.emit(this.index);
 
   }
-
+  limitarTexto(texto: string, limite: number): string {
+    return texto.length > limite ? `${texto.slice(0, limite)}...` : texto;
+  }
 }
+
+

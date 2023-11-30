@@ -1,24 +1,19 @@
-<div class="card animated fadeIn fast custom-card-width m-10">
-    <img [src]="arete.img " class="img " [alt]="arete.nombre">
-    <div class="card-body">
-        <h5 class="card-title">{{ arete.nombre}}</h5>
-        <p class="card-text custom-text">{{arete.bio }}</p>
-        <p class="card-text custom-text"><small class="text-muted">{{arete.itemn}}</small></p>
-        <button (click)="verArete()" type="button" class="btn btn-outline-primary btn-block">
-            Descripción ....
+<!-- <style>
+    .card {
+    max-height: 400px; /* Ajusta el valor según sea necesario */
+}
+</style> -->
+<div class="card-deck">
+    <div class="card animated fadeIn fast">
+    <img [src]="arete.img " class="card-img-top" [alt]="arete.nombre">
+        <div class="card-body ">
+            <h5 class="card-title">{{ arete.nombre}}</h5>
+            <p class="card-text custom-text ">{{limitarTexto(arete.bio, 50) }}</p>
+            <p class="card-text custom-text"><small class="text-muted"></small></p>
+            <button (click)="verArete()" type="button" class="btn btn-outline-primary w-100">
+            Ver más....
         </button>
+        </div>
     </div>
 </div>
-
-<!-- <div class="card animated fadeIn fast m-2">
-    <img [src]="arete.img " class="img " [alt]="arete.nombre">
-    <div class="card-body">
-        <h5 class="card-title">{{ arete.nombre}}</h5>
-        <p class="card-text">{{arete.bio }}</p>
-        <p class="card-text"><small class="text-muted">{{arete.aparicion}}</small></p>
-        
-        <button (click)="verArete()" type="button" class="btn btn-outline-primary btn-block">
-            Descripción ....
-        </button>
-    </div>
-</div> -->
+<!-- row row-cols-1 row-cols-sm-2 row-cols-md-4 -->

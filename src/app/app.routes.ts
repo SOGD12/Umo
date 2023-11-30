@@ -4,12 +4,15 @@ import { AboutComponent } from './components/about/about.component';
 import { AretesComponent } from './components/aretes/aretes.component';
 import { AreteComponent } from './components/arete/arete.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
+import { CollaresComponent } from "./components/collares/collares.component";
 
 
 const APP_ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'aretes', component: AretesComponent },
+    { path: 'collares', component: CollaresComponent },
+    { path: 'arete/:id', component: AreteComponent },
     { path: 'arete/:id', component: AreteComponent },
     { path: 'buscar/:termino', component: BuscadorComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home' }

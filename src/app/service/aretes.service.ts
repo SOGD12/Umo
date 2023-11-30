@@ -52,6 +52,16 @@ export class AretesService {
         }
 
     ];
+        //API DE LOS COLLARES 
+    private collares : Collares[]= [
+        {
+            nombre: "Wolverine",
+            bio: "En el universo ficticio de Marvel, Wolverine posee poderes regenerativos que pueden curar cualquier herida, por mortal que ésta sea, además ese mismo poder hace que sea inmune a cualquier enfermedad existente en la Tierra y algunas extraterrestres . Posee también una fuerza sobrehumana, que si bien no se compara con la de otros superhéroes como Hulk, sí sobrepasa la de cualquier humano.",
+            img: "assets/img/Wedding Gowns, Bridesmaids & More _ Anthropologie.jpeg",
+            itemn: "1974-11-01",
+        }
+    ];
+
 
     constructor() {
         console.log("Servico funciona ");
@@ -88,6 +98,16 @@ export class AretesService {
         bio: string;
         img: string;
         itemn: string;
-        
         idx?: number
+
+
+}
+    export interface Collares {
+        nombre: string;
+        bio: string;
+        img: string;
+        itemn: string;
+        idx?: number
+
+
 }
