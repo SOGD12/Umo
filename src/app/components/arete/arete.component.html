@@ -7,10 +7,9 @@
 
         <img [src]="arete.img" class="img-fluid" [alt]="arete.nombre">
         <br><br>
-        <br><a [routerLink]="['/aretes']" class="btn btn-outline-danger d-block m-4">Regresar</a>
-
+        
     </div>
-
+    
     <div class="col-md-8">
         <br>
         <h3>{{arete.nombre}}</h3>
@@ -18,7 +17,7 @@
         <p>
             {{arete.bio}}
         </p>
-
+        <br><a [routerLink]="['/aretes']" class="btn btn-outline-danger d-block m-4">Regresar</a>
     </div>
 
 </div>

@@ -1,5 +1,21 @@
-<h1>Collares <small>No se que poner aqui</small></h1>
+<h1>Collares <small>No sé qué poner aquí</small></h1>
+<br>
+<p class="text-center">Aqui se encuentran los items (collares)</p>
 <hr>
-<div class="card-columns">
 
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<div class="row row-cols-1 row-cols-md-4 g-4 animated fadeIn">
+  <div class="card-block mb-3" *ngFor="let collar of collares">
+    <div class="card">
+      <img [src]="collar.img" class="card-img-top" [alt]="">
+      <div class="card-body">
+        <h5 class="card-title">Prueba1</h5>
+        <p class="card-text">Prueba2</p>
+        <button type="button" class="btn btn-outline-primary w-100">
+          Ver más..
+        </button>
+        <!-- <a [routerLink]="['/collar', i]" class="btn btn-outline-primary w-100"> Ver mas???</a> -->
+      </div>
+    </div>
+  </div>
 </div>
