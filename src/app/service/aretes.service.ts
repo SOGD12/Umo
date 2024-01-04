@@ -59,6 +59,18 @@ export class AretesService {
             bio: "En el universo ficticio de Marvel, Wolverine posee poderes regenerativos que pueden curar cualquier herida, por mortal que ésta sea, además ese mismo poder hace que sea inmune a cualquier enfermedad existente en la Tierra y algunas extraterrestres . Posee también una fuerza sobrehumana, que si bien no se compara con la de otros superhéroes como Hulk, sí sobrepasa la de cualquier humano.",
             img: "assets/img/Wedding Gowns, Bridesmaids & More _ Anthropologie.jpeg",
             itemn: "1974-11-01",
+        },
+        {
+            nombre: "Wolverine 2",
+            bio: "En el universo ficticio de Marvel, Wolverine posee poderes regenerativos que pueden curar cualquier herida, por mortal que ésta sea, además ese mismo poder hace que sea inmune a cualquier enfermedad existente en la Tierra y algunas extraterrestres . Posee también una fuerza sobrehumana, que si bien no se compara con la de otros superhéroes como Hulk, sí sobrepasa la de cualquier humano.",
+            img: "assets/img/pluma.jpeg",
+            itemn: "1974-11-01",
+        },
+        {
+            nombre: "Wolverine 3",
+            bio: "En el universo ficticio de Marvel, Wolverine posee poderes regenerativos que pueden curar cualquier herida, por mortal que ésta sea, además ese mismo poder hace que sea inmune a cualquier enfermedad existente en la Tierra y algunas extraterrestres . Posee también una fuerza sobrehumana, que si bien no se compara con la de otros superhéroes como Hulk, sí sobrepasa la de cualquier humano.",
+            img: "assets/img/descarga.jpeg",
+            itemn: "1974-11-01",
         }
     ];
 
@@ -90,6 +102,9 @@ export class AretesService {
             }
         }
         return aretesARR;
+    }
+    getCollares(){
+        return this.collares;
     }
 }
 
