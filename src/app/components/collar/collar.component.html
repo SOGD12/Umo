@@ -1,0 +1,24 @@
+<h5>Este es el Id como se va a identificar el producto en el excel</h5>
+<p class="animated fadeIn">{{collar.nombre | uppercase}} <small>({{collar.itemn }})</small></p>
+<hr>
+
+<div class="row animated fadeIn fast ">
+    <div class="col-md-4">
+
+
+        <img [src]="collar.img" class="img-fluid" [alt]="collar.nombre">
+        <br><br>
+        
+    </div>
+    
+    <div class="col-md-8">
+        <br>
+        <h3>{{collar.nombre}}</h3>
+        <hr>
+        <p>
+            {{collar.bio}}
+        </p>
+        <br><a [routerLink]="['/collares']" class="btn btn-outline-danger d-block m-4">Regresar</a>
+    </div>
+
+</div>

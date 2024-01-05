@@ -15,6 +15,7 @@ import { AreteComponent } from './components/arete/arete.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 import { AreteTarjetaComponent } from './components/arete-tarjeta/arete-tarjeta.component';
 import { CollaresComponent } from './components/collares/collares.component';
+import { CollarComponent } from './components/collar/collar.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { CollaresComponent } from './components/collares/collares.component';
     BuscadorComponent,
     AreteTarjetaComponent,
     CollaresComponent,
+    CollarComponent,
   ],
   imports: [
     BrowserModule,
