@@ -1,6 +1,10 @@
+b{
+  color: blueviolet;
+}
+
   hr {
     border: none;
-    height: 3px;
+    height: 4px;
     color: #333;
     background-color: #333;
   }
